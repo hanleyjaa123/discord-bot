@@ -31,7 +31,7 @@ client.on('message', (message) => {
 
 			
 
-		console.log(member);
+		message.reply(`${member.tag}`);
 		} 
 	}
 })
