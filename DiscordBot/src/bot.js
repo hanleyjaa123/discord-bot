@@ -23,15 +23,14 @@ client.on('message', (message) => {
 		.split(/\s+/);
 
 
-		if(CMD_NAME === 'info') {
-			if(args.length === 0) return message.reply('Please provide an Username');
+		if(CMD_NAME === 'count') {
+			if(args.length === 0) return message.reply('Please enter command suffux');
 
 			
 			const member = message.guild.members.fetch(args[0]);
 
-			
+			console.log(member);
 
-		message.reply(`${member.tag}`);
 		} 
 	}
 })
